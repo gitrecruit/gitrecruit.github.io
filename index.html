@@ -3,20 +3,23 @@
 body {
 	background-color: black;
 }
-img {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   margin-top: -250px; /* Half the height */
-   margin-left: -250px; /* Half the width */
-}
+div.container4 {
+    height: 10em;
+    position: relative }
+div.container4 div {
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+
 </style>
 <html>
 <body>
-   <table id="wrapper">
-      <tr>
-         <td><img src="gr.png" alt="" /></td>
-      </tr>
-   </table>
+   <div class=container4>
+      <div><img  src="gr.png" alt="" /></div>
+   </div>
 </body>
 </html>
