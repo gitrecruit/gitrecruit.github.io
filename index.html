@@ -10,6 +10,15 @@ img {
    margin-left: -24%;  
 }
 </style>
+<script>
+var pdf = new PDFObject({
+  url: "GitRecruit_Recruiter_Job.pdf",
+  id: "pdfRendered",
+  pdfOpenParams: {
+    view: "FitH"
+  }
+}).embed("pdfRenderer");
+</script>
 <html>
 <body>
    <table id="wrapper">
@@ -19,5 +28,6 @@ img {
         </td>
       </tr>
    </table>
+   <div id="pdfRenderer"></div>
 </body>
 </html>
