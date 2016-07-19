@@ -11,15 +11,7 @@ img {
 }
 </style>
 <script src="pdfobjectmin.js"></script>
-<script type="text/javascript">
-var pdf = new PDFObject({
-  url: "GitRecruit_Recruiter_Job.pdf",
-  id: "pdfRendered",
-  pdfOpenParams: {
-    view: "FitH"
-  }
-}).embed("pdfRenderer");
-</script>
+<script>PDFObject.embed("GitRecruit_Recruiter_Job.pdf", "#example1");</script>
 <html>
 <body>
    <table id="wrapper">
@@ -29,6 +21,6 @@ var pdf = new PDFObject({
         </td>
       </tr>
    </table>
-   <div id="pdfRenderer"></div>
+   <div id="example1"></div>
 </body>
 </html>
